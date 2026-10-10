@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic portfolio showcasing coursework, projects, skills, and learning journey in Computer Engineering.">
+<title>Jal Hierras | Academic Portfolio</title>
+<style>
+:root{--navy:#10233f;--blue:#2463eb;--sky:#eaf2ff;--ink:#1b2638;--muted:#627089;--paper:#f7f9fc;--white:#fff;--line:#e4eaf2}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+a{color:inherit}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1120px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-weight:800;color:var(--navy);letter-spacing:.2px;text-decoration:none}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:.92rem;color:var(--muted);font-weight:650}
+nav a:hover{color:var(--blue)}
+main{max-width:1120px;margin:auto;padding:0 24px}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:42px;align-items:center;padding:82px 0 70px}
+.eyebrow{color:var(--blue);font-size:.8rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(2.7rem,6vw,4.7rem);line-height:1.05;letter-spacing:-2px;color:var(--navy);margin:14px 0 18px}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:750;border:1px solid var(--line)}
+.primary{background:var(--blue);color:white;border-color:var(--blue)}
+.secondary{background:white;color:var(--navy)}
+.profile-card{background:linear-gradient(145deg,#10233f,#244f91);color:white;border-radius:26px;padding:28px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 50px #10233f22}
+.avatar{width:76px;height:76px;border-radius:22px;background:#ffffff20;display:grid;place-items:center;font-size:2rem;border:1px solid #ffffff50}
+.profile-card h2{font-size:1.6rem;margin:22px 0 6px}
+.profile-card p{color:#d9e6ff;font-size:.98rem;margin:0}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.pill{font-size:.78rem;background:#ffffff1b;border:1px solid #ffffff30;padding:6px 10px;border-radius:999px}
+section{padding:38px 0 48px;scroll-margin-top:85px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}
+h2.section-title{font-size:2rem;color:var(--navy);margin:0;letter-spacing:-.7px}
+.section-intro{color:var(--muted);margin:7px 0 0;max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 24px #10233f06}
+.card .icon{font-size:1.5rem}
+.card h3{margin:10px 0 8px;color:var(--navy);font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;margin:12px 6px 0 0;background:var(--sky);color:#214c9b;padding:4px 9px;border-radius:8px;font-size:.76rem;font-weight:700}
+.timeline{border-left:2px solid #cbdaf7;margin-left:8px;padding-left:24px;display:grid;gap:18px}
+.timeline-item{position:relative;background:white;border:1px solid var(--line);border-radius:16px;padding:20px}
+.timeline-item:before{content:"";position:absolute;left:-32px;top:25px;width:12px;height:12px;background:var(--blue);border:3px solid var(--paper);border-radius:50%}
+.timeline-item h3{margin:0;color:var(--navy)}
+.meta{font-size:.86rem;color:var(--blue);font-weight:750;margin:3px 0 8px}
+.timeline-item p{margin:0;color:var(--muted)}
+.callout{background:var(--sky);border:1px solid #d6e4ff;border-radius:20px;padding:26px}
+.callout p{margin:8px 0 0;color:#41516a}
+.skills{display:flex;gap:10px;flex-wrap:wrap}
+.skill{padding:10px 14px;background:white;border:1px solid var(--line);border-radius:12px;font-weight:700;color:#34435b}
+.contact{background:var(--navy);color:white;border-radius:24px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.contact h2{margin:0;font-size:1.8rem}
+.contact p{color:#d9e6ff;margin:8px 0 0}
+.contact a{background:white;color:var(--navy);padding:12px 16px;border-radius:11px;text-decoration:none;font-weight:800;white-space:nowrap}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 10px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:55px 0}.grid{grid-template-columns:1fr 1fr}.profile-card{min-height:250px}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px}.grid{grid-template-columns:1fr}main{padding:0 18px}.hero{gap:25px}h1{letter-spacing:-1px}.section-head{display:block}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home">JH. PORTFOLIO</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div>
+      <div class="eyebrow">Student • Learner • Future Engineer</div>
+      <h1>Learning today.<br>Building tomorrow.</h1>
+      <p>Welcome to my academic portfolio. This website presents my educational journey, selected coursework, research, and developing skills as a Computer Engineering student.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work ↓</a><a class="btn secondary" href="#contact">Get in touch</a></div>
+    </div>
+    <aside class="profile-card">
+      <div>
+        <div class="avatar" aria-hidden="true">✦</div>
+        <h2>Jal Hierras</h2>
+        <p>Computer Engineering Student<br>Mapúa University</p>
+      </div>
+      <div class="pills"><span class="pill">Curiosity</span><span class="pill">Problem-solving</span><span class="pill">Continuous learning</span></div>
+    </aside>
+  </section>
+
+  <section id="about">
+    <div class="section-head"><div><h2 class="section-title">About Me</h2><p class="section-intro">A short introduction to my interests, values, and goals.</p></div></div>
+    <div class="callout">
+      <strong>My learning journey</strong>
+      <p>I am a student interested in technology and how engineering can address real-world problems. My academic experiences have encouraged me to think critically, collaborate with others, manage my time, and keep improving through feedback. I hope to strengthen my technical knowledge and apply it to practical, responsible, and useful solutions.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head"><div><h2 class="section-title">Education</h2><p class="section-intro">The academic experiences that have shaped my foundation.</p></div></div>
+    <div class="timeline">
+      <article class="timeline-item"><h3>Mapúa University</h3><div class="meta">Computer Engineering • Current studies</div><p>Building knowledge in computing, engineering concepts, emerging technologies, sustainability, and global issues through coursework and collaborative tasks.</p></article>
+      <article class="timeline-item"><h3>Pasig Catholic College</h3><div class="meta">Senior High School • STEM Strand</div><p>Developed a foundation in science, technology, mathematics, research, communication, and academic problem-solving.</p></article>
+      <article class="timeline-item"><h3>Work Immersion</h3><div class="meta">Pasig City Hall</div><p>Gained exposure to a professional public-service environment and the importance of responsibility, communication, and teamwork.</p></article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-head"><div><h2 class="section-title">Selected Projects & Coursework</h2><p class="section-intro">A selection of research and class projects that demonstrate my learning and interests.</p></div></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🧪</div><h3>Papaya-Enzyme Laundry Detergent Research</h3><p>Research project exploring papaya (Carica papaya) enzymes as a component of powdered laundry detergent, with attention to stain removal and practical formulation.</p><span class="tag">Research</span><span class="tag">Experimentation</span></article>
+      <article class="card"><div class="icon">🚦</div><h3>Smart Emergency Traffic Response</h3><p>Concept exploring real-time digital mapping, traffic data, signal prioritization, and siren-usage monitoring to support emergency response vehicles.</p><span class="tag">Systems thinking</span><span class="tag">Smart mobility</span></article>
+      <article class="card"><div class="icon">🤖</div><h3>Emerging Technology: Edge AI</h3><p>Course presentation explaining how edge artificial intelligence processes data close to where it is collected, along with its applications and challenges.</p><span class="tag">Computer Engineering</span><span class="tag">Presentation</span></article>
+      <article class="card"><div class="icon">🌏</div><h3>Global Migration & Technical Students</h3><p>Discussion project considering whether technical graduates may work in the Philippines or abroad, including the reasons behind their choices.</p><span class="tag">Global studies</span><span class="tag">Interview</span></article>
+      <article class="card"><div class="icon">♻️</div><h3>Sustainability in Engineering</h3><p>Course reflection on how sustainability can guide responsible technology development, resource use, and the design of solutions for society.</p><span class="tag">Sustainability</span><span class="tag">Reflection</span></article>
+      <article class="card"><div class="icon">🗺️</div><h3>Mind Mapping for Time Management</h3><p>Applied mind mapping to organize academic responsibilities, break large tasks into smaller steps, and decide which priorities to address first.</p><span class="tag">Design thinking</span><span class="tag">Organization</span></article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-head"><div><h2 class="section-title">Skills & Strengths</h2><p class="section-intro">Skills I am developing through school, research, and teamwork.</p></div></div>
+    <div class="skills">
+      <span class="skill">Research & documentation</span><span class="skill">Critical thinking</span><span class="skill">Problem-solving</span><span class="skill">Presentation skills</span><span class="skill">Team collaboration</span><span class="skill">Time management</span><span class="skill">Technical communication</span><span class="skill">Adaptability</span><span class="skill">Continuous learning</span>
+    </div>
+  </section>
+
+  <section id="goals">
+    <div class="section-head"><div><h2 class="section-title">Goals & Reflection</h2><p class="section-intro">Where I hope to grow next.</p></div></div>
+    <div class="grid">
+      <article class="card"><h3>Strengthen my foundation</h3><p>Continue improving in programming, electronics, computer systems, and the mathematics that support engineering.</p></article>
+      <article class="card"><h3>Build practical projects</h3><p>Turn classroom concepts into working prototypes and useful solutions while testing, documenting, and improving each design.</p></article>
+      <article class="card"><h3>Make a positive impact</h3><p>Develop technology with attention to safety, accessibility, sustainability, and the needs of the people who use it.</p></article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div><h2>Let's connect.</h2><p>For academic collaboration, project discussions, or professional opportunities.</p></div>
+      <a href="mailto:YOUR_EMAIL@example.com">Email me ↗</a>
+    </div>
+    <p class="section-intro" style="font-size:.85rem;margin-top:12px">Before submitting, replace the sample email address with your real school or professional email. Add your preferred contact or professional profile links if required.</p>
+  </section>
+</main>
+<footer>© <span id="year">2026</span> Jal Hierras • Academic Portfolio</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('nav a').forEach(link => link.addEventListener('click', () => {
+  document.querySelectorAll('nav a').forEach(item => item.style.color = '');
+  link.style.color = '#2463eb';
+}));
+</script>
+</body>
+</html>
